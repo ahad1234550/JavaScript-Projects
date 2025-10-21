@@ -1,0 +1,58 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+button.box {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button.reset:hover {
+  background-color: white;
+  color: black;
+}
+.color-x {
+  color: rgb(216, 146, 16) !important;
+}
+.color-o {
+  color: rgba(55, 0, 255, 0.329) !important;
+}
+.win {
+  font-weight: 900 !important;
+  font-size: 50px !important;
+}
