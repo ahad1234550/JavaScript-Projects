@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top, #0a0a0a, #000000 80%);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 30px 25px;
+  gap: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 26px;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Amount box */
+.amount {
+  width: 100%;
+}
+
+.amount p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.amount input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amount input:focus {
+  outline: none;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Currency row */
+.currency {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.currency .from,
+.currency .to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.currency p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.currency img {
+  width: 60px;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.currency select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #111;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#result {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: #00ffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
